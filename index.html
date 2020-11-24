@@ -1,5 +1,5 @@
-<div class="outer">
-  <div class="inner"></div>
+<div class="shape ring">
+  <div class="shape circle"></div>
 </div>
 <style>
   :root {
@@ -12,25 +12,25 @@
     justify-content: center;
     background-color: #5b7886;
   }
-  .outer {
-    width: 50vw;
-    height: 50vw;
+
+  .shape {
+    width: 90vw;
+    height: 90vw;
     border-radius: 100%;
+  }
+
+  .ring {
     border: 3px solid var(--color);
   }
-  .inner {
-    width: 50vw;
-    height: 50vw;
+
+  .circle {
     background-color: var(--color);
-    border-radius: 100%;
     animation: pulsate 5.5s ease-in-out infinite alternate;
   }
+
   @keyframes pulsate {
     0% {
-      transform: scale(0);
-    }
-    20% {
-      transform: scale(0);
+      transform: scale(0.05);
     }
     100% {
       transform: scale(1);

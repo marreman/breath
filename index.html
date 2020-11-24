@@ -1,39 +1,55 @@
-<div class="shape ring">
-  <div class="shape circle"></div>
-</div>
-<style>
-  :root {
-    --color: rgba(0, 0, 0, 0.1);
-  }
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Breath</title>
+    <style>
+      :root {
+        --shape-color: rgba(0, 0, 0, 0.1);
+      }
 
-  body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #5b7886;
-  }
+      html,
+      body {
+        height: 100%;
+      }
 
-  .shape {
-    width: min(90vw, 90vh);
-    height: min(90vw, 90vh);
-    border-radius: 100%;
-  }
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #5b7886;
+        margin: 0;
+      }
 
-  .ring {
-    border: 3px solid var(--color);
-  }
+      .shape {
+        width: min(90vw, 90vh);
+        height: min(90vw, 90vh);
+        border-radius: 100%;
+      }
 
-  .circle {
-    background-color: var(--color);
-    animation: pulsate 5.5s ease-in-out infinite alternate;
-  }
+      .ring {
+        border: 3px solid var(--shape-color);
+      }
 
-  @keyframes pulsate {
-    0% {
-      transform: scale(0.05);
-    }
-    100% {
-      transform: scale(1);
-    }
-  }
-</style>
+      .circle {
+        background-color: var(--shape-color);
+        animation: pulsate 5.5s ease-in-out infinite alternate;
+      }
+
+      @keyframes pulsate {
+        0% {
+          transform: scale(0.05);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="shape ring">
+      <div class="shape circle"></div>
+    </div>
+  </body>
+</html>

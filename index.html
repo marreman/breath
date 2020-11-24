@@ -1,0 +1,39 @@
+<div class="outer">
+  <div class="inner"></div>
+</div>
+<style>
+  :root {
+    --color: rgba(0, 0, 0, 0.1);
+  }
+
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #5b7886;
+  }
+  .outer {
+    width: 50vw;
+    height: 50vw;
+    border-radius: 100%;
+    border: 3px solid var(--color);
+  }
+  .inner {
+    width: 50vw;
+    height: 50vw;
+    background-color: var(--color);
+    border-radius: 100%;
+    animation: pulsate 5.5s ease-in-out infinite alternate;
+  }
+  @keyframes pulsate {
+    0% {
+      transform: scale(0);
+    }
+    20% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+</style>
